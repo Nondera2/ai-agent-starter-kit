@@ -35,7 +35,7 @@ If they say "สัมภาษณ์ใหม่", interview again and update `
 
 ## Which skill to use
 - New idea, or they don't know what to build: `brainstorming`, then `writing-plans`
-- A plan that needs to be pinned down: `grill-with-docs`
+- A plan that needs to be pinned down: `grilling` (or `/grill-with-docs` when they type it, which also writes the decisions down)
 - Writing or changing code: `ponytail` (the smallest change that works)
 - Something broken: `systematic-debugging` before fixing
 - Before saying anything is done: `verification-before-completion`

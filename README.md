@@ -37,16 +37,16 @@ skill คือ "วิชา" ที่สอน AI ให้ทำงานเ
 
 ```
 npx skills add obra/superpowers --skill "*" -g -a universal -a claude-code -y
-npx skills add mattpocock/skills --skill grill-with-docs -g -a universal -a claude-code -y
+npx skills add mattpocock/skills --skill grill-with-docs grilling domain-modeling -g -a universal -a claude-code -y
 npx skills add DietrichGebert/ponytail --skill ponytail -g -a universal -a claude-code -y
 npx skills add vercel-labs/skills --skill find-skills -g -a universal -a claude-code -y
 ```
 
-บรรทัดแรกลงชุด superpowers มาทั้งชุด 15 ตัว (มีตัวที่ใช้ในข้อ 7 อยู่ 4 ตัว ที่เหลือ AI หยิบใช้เองเมื่อจำเป็น) ทั้งหมดจะได้ 18 skill
+บรรทัดแรกลงชุด superpowers มาทั้งชุด 15 ตัว (มีตัวที่ใช้ในข้อ 7 อยู่ 4 ตัว ที่เหลือ AI หยิบใช้เองเมื่อจำเป็น) บรรทัดที่สองลง grill-with-docs พร้อม 2 ตัวที่มันต้องใช้ (grilling, domain-modeling) ทั้งหมดจะได้ 20 skill
 
 ที่มาของแต่ละ skill:
 - [obra/superpowers](https://github.com/obra/superpowers) — brainstorming, writing-plans, systematic-debugging, verification-before-completion
-- [mattpocock/skills](https://github.com/mattpocock/skills) — grill-with-docs
+- [mattpocock/skills](https://github.com/mattpocock/skills) — grill-with-docs (+ grilling, domain-modeling)
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ponytail
 - [vercel-labs/skills](https://github.com/vercel-labs/skills) — find-skills
 
@@ -64,10 +64,12 @@ npx skills add vercel-labs/skills --skill find-skills -g -a universal -a claude-
 ปกติไม่ต้องเรียกชื่อ skill เอง AI หยิบใช้ให้ตามเรื่องที่คุย แต่ถ้าอยากเรียกเอง พิมพ์ชื่อ skill ลงไปในข้อความได้เลย
 
 ### grill-with-docs — ให้ AI ซักเราจนแผนชัด
-AI ถามทีละรอบ แต่ละข้อมีคำตอบที่มันแนะนำมาให้ ตอบ "ใช่" ก็ไปต่อได้
-1. "มีไอเดียขายของออนไลน์ แต่ยังไม่ชัด ช่วย grill ให้หน่อย"
-2. "จะเปิดเพจรีวิวอาหาร ช่วยถามจนได้แผนที่ทำได้จริง"
-3. "จะย้ายงาน ช่วยถามให้คิดครบก่อนตัดสินใจ"
+AI ถามทีละรอบ แต่ละข้อมีคำตอบที่มันแนะนำมาให้ ตอบ "ใช่" ก็ไปต่อได้ ถามตรงและไม่ปล่อยจนกว่าแผนจะชัด เหมาะตอนมีไอเดียแล้ว และจดสิ่งที่ตกลงกันไว้เป็นไฟล์ให้ด้วย
+
+ตัวนี้ AI ไม่หยิบใช้เอง ต้องพิมพ์ `/grill-with-docs` ตามด้วยเรื่องที่อยากให้ซัก
+1. `/grill-with-docs มีไอเดียขายของออนไลน์ แต่ยังไม่ชัด`
+2. `/grill-with-docs จะเปิดเพจรีวิวอาหาร อยากได้แผนที่ทำได้จริง`
+3. `/grill-with-docs จะย้ายงาน ช่วยถามให้คิดครบก่อนตัดสินใจ`
 
 ### brainstorming — คิดไอเดียให้เป็นรูปเป็นร่าง
 1. "อยากหารายได้เสริมจากสิ่งที่ถนัด ช่วย brainstorm"
