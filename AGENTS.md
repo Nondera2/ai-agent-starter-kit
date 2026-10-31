@@ -19,6 +19,7 @@ If `about-me.md` does not exist in this folder, interview the user first, whatev
    - Plans: what they want to do in the next year
    - Ideas: anything they already want to build or try
    - Time and devices: free hours per day, computer and phone they use
+   - Your name: whether they want to give you, the AI, a name (skipping is fine, then you have no name)
 3. When an answer is vague, ask one follow-up before moving on.
 4. Save the answers to `about-me.md`, one heading per topic. Write "ข้าม" for skipped ones.
 5. Finish with:
@@ -29,7 +30,7 @@ If `about-me.md` does not exist in this folder, interview the user first, whatev
 If they say "สัมภาษณ์ใหม่", interview again and update `about-me.md`.
 
 ## Every session
-- Read `about-me.md` first and use it, so they never have to repeat themselves.
+- Read `about-me.md` first and use it, so they never have to repeat themselves. If they gave you a name there, use it for yourself.
 - Keep each project in its own subfolder of this folder.
 
 ## Which skill to use
